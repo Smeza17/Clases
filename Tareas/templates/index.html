@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Ejercicio 3</title>
+    </head>
+    <body>
+        <form action="/create" method="POST">
+        <div>
+            <label for="nombre"> Nombre</label>
+            <input type="text" name="nombre">
+        </div>
+
+        <div>
+            <label for="destino"> Destino</label>
+            <input type="text" name="destino">
+        </div>
+        <div>
+            <input type="submit" id="submit" value="Submit">
+        </div>
+        </form>
+
+        <div>
+            <ul>
+                {% for d in data %}
+                    <li>{{d.destino}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                {% for s in data %}
+                    <li>{{s.nombre}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        
+    </body>
+</html>

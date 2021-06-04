@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Ejercicio2db</title>
+    </head>
+    <body>
+        <div>
+            <ul>
+                {% for d in data %}
+                    <li>{{d.nombre}}, {{d.apellido}}, {{d.colegio}}, {{d.distrito}}, {{d.profesion}} </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div>
+            {% for d in dataAlumno %}
+                    <li>{{d.nombre}}, {{d.apellido}}, {{d.colegio}}, {{d.distrito}} </li>
+                {% endfor %}
+        </div>
+            
+    </body>
+</html>
